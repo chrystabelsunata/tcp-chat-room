@@ -3,4 +3,7 @@ This project is my implementation of a **TCP chatroom** using **Python socket pr
 
 ## Overview
 The chatroom follows a **client-server archictecture**. The server handles multiple concurrent client connections, and routes messages between clients. Clients connect to the server and handle user commands until the user exits. Clients can subscribe to a hashtag and send and receive messages to those hashtags. The client supports the following user commands:
-- message
+- `subscribe <hashtag>`: 
+- `message <hashtag> <message>`
+- `unsubscribe <hashtag>`
+- `timeline`
